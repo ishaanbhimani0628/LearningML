@@ -1,0 +1,54 @@
+1. How would you define Machine Learning:
+A computer program that learns from data, generalizes the data, and improves based on new data.
+2. Four problems where Machine Learning shines:
+- good for problems with no algorithmic solution, replace hand-tuned rules, adapt to fluctuating envs, help humans learn
+Spam filters, voice recognition, clustering web visitors, facial recognition
+3. Labelled Training Set:
+Training set of data with both the data and its classification (label) already
+4. Most common supervised tasks:
+Classification and Regression
+5. Four common unsupervised tasks:
+-also association rule learning: dig into large amts of data to find interesting relations
+Dimensionality reduction, clustering groups, visualization, anomaly detection
+6. To make a robot walk in various terrains
+Probably reinforcement learning
+7. Type of algorith to segment customers
+Clustering algorithm
+8.Spam detection: supervised or unsupervised?
+Supervised, certain emails tagged as spam, notice pattern in that since they are labelled
+9.Online learning
+-learn incrementally, good at adapting and training with lots of data
+Trains each round on only a mini-batch or small part of the total data set instead of all of it
+10.Out-of-core learning
+-type of online learning; mini-batches
+When all the data cannot fit on a machine, it loads part of the data, trains, and then loads a different part
+of the data.
+11.What algorithms rely on similarity measure to make predicitions?
+-instance-based learns training data by haert and generalizes by similarity to the training instances
+12.Difference between a model parameter and learning algorithm's hyperparameter
+-model param used to determine how model will predict. Hyperparameter is parameter of the algorithm.
+Parameter is a variable in a model, which is chosen by the learning algorithm. A hyperparameter works with
+how a learning algorithm acts, and is thus not changed by the algorithm.
+13.What do model based algorithms search for? Most common strategy for their success? How do they make predictions?
+Model based algorithms look for a trend and try to fit it by tweaking parameters to minimize the cost function.
+The cost function is an evaluation technique, how far data points are from the model's function. They make
+predictions on the model's trendline.
+14.Four main challenges of Machine Learning.
+-lack of data, poor data quality, nonrepresentative data, bad features, overfitting and underfitting
+Overfitting, underfitting, noise, data cleaning, useless features, high dimensions
+15.If performs well on the training set but not on test set, it is overfitting. Possible solutions:
+-simplify model, reduce noise in training data
+Decrease params in model, regularize model, different model.
+16.Test set?
+Split data set into train, validation, test. Test set is there for the very end of a model to best tested on. This
+is for evaluation, and it is so we know if it is overfitting or underfitting.
+17. Validation set?
+-used to compare models and tune hyperparameters
+Purpose of validation set is to train multiple models with different hyperparameters using the training set, test on
+validation set, and only when all is said and done do you use the test set.
+18. Tuning hyperparameters of test set
+This is bad because you generalize for that set, but not generalize for all data. You will likely overfit the set.
+19.Cross validation
+-compare models without a validation set.
+Use several combinations of sections of the data to use as validation. This works better because you "waste" less
+data and can still validate.
